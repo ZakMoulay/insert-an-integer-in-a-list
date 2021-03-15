@@ -51,19 +51,19 @@ int main() {
                 }
             }
      }
-     // insert function
-   void insert(int newArr1[],int newArrSize,int addNum)
+     // insert function     a = [1,2,4,5,X]
+         void insert(int newArr1[],int newArrSize,int addNum)
     {
-        //newArr[newArrSize+1] = addNUm + 1 ??
-        int i = 0;                              
+        int n = newArrSize - 1;                       // n = 4        
+        int i = 0;
         while ( addNum > newArr1[i])
-            i = i + 1;
+            i = i + 1;                               // i = 2
         
-        for (int j = 0; j < newArrSize-i;j++){
-         newArr1[newArrSize-j+1] = newArr1[newArrSize-j];
+              for (int j = 0; j < n-i;j++){          // j= 0 to j = 2
+                newArr1[n-j] = newArr1[n-j-1];                  // newArr1[4] = newArr1[3] && newArr1[3] = newArray[2] 
+        }
+        
         newArr1[i] = addNum;
-       }
-        
-        
     }
+    
     
