@@ -61,7 +61,7 @@ int main() {
         int i = 0;
         while ( addNum > newArr1[i])
             i = i + 1;
-            cout << i <<endl;
+            
               for (int j = 0; j < n -i;j++){
                 newArr1[n-j] = newArr1[n-j-1];
                   }
